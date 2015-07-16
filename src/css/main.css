@@ -1,7 +1,13 @@
-h1 {
-	color: green;
+.header {
+    width: 1400px;
+    height: 119px;
+    background: url(images/header.png);
+}
 
+/*.logo {
+    width: 50px;
+    height: 40px;
+    width: 179px;
+    height: 42px;
 }
-p {
-	color: black;
-}
+*/
