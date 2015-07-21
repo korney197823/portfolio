@@ -12,7 +12,7 @@ gulp.task('server', function () {
 
 gulp.task('watch', function () {
 	gulp.watch([
-		'src/*.index.html',
+		'src/*.html',
 		'src/js/**/*.js',
 		'src/css/**/*.css'
 		]).on('change', browserSync.reload);
