@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Портфолио</title>
+    <!--SEO-->
+    <meta name="description" content="loftschool_homework">
+    <meta name="keywords" content="frontend_development">
+    <meta name="author" content="Kornienko Denis">
+    <!--favicon.ico-->
+    <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="bower/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="bower/modernizr/modernizr.js"></script>
@@ -44,60 +51,113 @@
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="menu-item">
-                            	<a href="/" class="menu-link">Обо мне</a>
+                                <a href="/" class="menu-link">Обо мне</a>
                             </li>
                             <li class="menu-item">
-                            	<a href="/my-work.html" class="menu-link">Мои работы</a>
+                                <a href="/my-work.html" class="menu-link">Мои работы</a>
                             </li>
                             <li class="contact">
-								<a href="/contact-me.html" class="menu-link">Связаться со мной</a>
+                                <a href="/contact-me.html" class="menu-link">Связаться со мной</a>
                             </li>
                         </ul>
                     </nav>
                     <address class="contact-me">
-                    	<div class="contact-me-header">
-                    		<span class="contact-header-text">Контакты</span>
-                    	</div>
-                    	<ul class="contact-me-list">
-	                        <li class="mail">
-		                        <a href="mailto:korney197823@gmail.com" class="contact-me-link">
-		                        	<span class="contact-me-text">korney197823@gmail.com</span>
-		                        </a> 
-	                        </li>
-	                        <li class="phone">
-	                        	<a href="tel:+79883337098" class="contact-me-link">
-		                        	<span class="contact-me-text">+79883337098</span>
-		                        </a> 
-	                        </li>
-	                        <li class="skype">
-	                        	<a href="skype:korney197823" class="contact-me-link">
-		                        	<span class="contact-me-text">korney197823</span>
-		                        </a> 
-	                        </li>
+                        <div class="contact-me-header">
+                            <span class="contact-header-text">Контакты</span>
+                        </div>
+                        <ul class="contact-me-list">
+                            <li class="mail">
+                                <a href="mailto:korney197823@gmail.com" class="contact-me-link">
+                                    <span class="contact-me-text">korney197823@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="phone">
+                                <a href="tel:+79883337098" class="contact-me-link">
+                                    <span class="contact-me-text">+79883337098</span>
+                                </a>
+                            </li>
+                            <li class="skype">
+                                <a href="skype:korney197823" class="contact-me-link">
+                                    <span class="contact-me-text">korney197823</span>
+                                </a>
+                            </li>
                         </ul>
                     </address>
-                    
                 </aside>
             </div>
-            <section class="content">
-                <article class="info">
-                    <div class="foto"></div>
-                    <div class="basic">
+            <!--Изменяемый контент -->
+            <div class="information-content">
+                <!--Основная информация-->
+                <section class="about-content">
+                    <h2 class="about-h">Основная информация</h2>
+                    <div class="about-cont-body">
+                        <div class="foto-wrap">
+                            <div class="avatar">
+                                <img src="css/images/WIN_20150719_191405.png" alt="Корней" class="avatar-img">
+                            </div>
+                        </div>
+                        <div class="basic-info">
+                            <ul class="about-info">
+                                <li class="info-list"><span class="info-text">Меня зовут : Корниенко Денис Витальевич</span></li>
+                                <li class="info-list"><span class="info-text">Мой возраст : 36 лет</span></li>
+                                <li class="info-list"><span class="info-text">Мой город : Геленджик, Россия</span></li>
+                                <li class="info-list"><span class="info-text">Моя специализация : FRONTEND разработчик</span></li>
+                                <li class="info-list"><span class="info-text">Ключевые навыки</span>
+                                    <ul class="skils">
+                                        <li class="skils-list"><span class="skils-text">html</span></li>
+                                        <li class="skils-list"><span class="skils-text>css</span></li>
+                                        <li class=" skils-list "><span class="skils-text>javascript</span>
+                                        </li>
+                                        <li class="skils-list"><span class="skils-text>gulp</span></li>
+                                        <li class=" skils-list "><span class="skils-text>git</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </article>
-                <article class="job">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                </article>
-                <article class="edu">
-                    <div class="first"></div>
-                    <div class="last"></div>
-                </article>
-            </section>
+                </section>
+                <!--/Основная информация-->
+                <!--Опыт работы-->
+                <section class="about-content">
+                    <div class="about-cont-body">
+                        <h2 class="about-h">Опыт работы</h2>
+                        <ul class="job-list">
+                            <li class="job-ico">
+                                <div class="place-work">ООО "Фирма "Славтранс" - Главный бухгалтер</div>
+                                <div class="period">Декабрь 2009 - По настоящее время</div>
+                            </li>
+                            <li class="job-ico">
+                                <div class="place-work">ЗАО "ФСК "Лидер-Юг" - Заместитель главного бухгалтера</div>
+                                <div class="period">Март 2007 - Ноябрь 2009</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /Опыт работы -->
+                <!--Образование -->
+                <section class="about-content">
+                    <div class="about-cont-body">
+                        <h2 class="about-h">Образование</h2>
+                        <ul class="edu-list">
+                            <li class="edu-ico">
+                                <div class="place-edu">Высшее. ТГАСУ</div>
+                                <div class="period">Сентябрь 2000 - июнь 2005</div>
+                            </li>
+                            <li class="edu-ico">
+                                <div class="place-edu">Loftschool.ru</div>
+                                <div class="period">Июль 2015 - по настоящее время</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!--/Образование-->
+            </div>
+            <!--/Изменяемый контент-->
         </div>
     </div>
-    <footer class "footer">
-        <div class="container">
+    <footer class="page-footer">
+        <div class="footer-container">
             <div class="lock">
                 <a href="login.html" class="lock-enter">Вход</a>
             </div>
