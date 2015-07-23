@@ -37,6 +37,35 @@ body {
 	top: 36px;
 }
 
+/*Социалтные иконки*/
+.ico{
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+.ico .ico-socials{
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px;
+}
+.ico .ico-socials:first-child{
+	margin-left: 0;
+}
+.ico .ico-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url(images/socials.png) no-repeat;
+}
+.ico .ico-link.vk{background-position: -2px -3px;}
+.ico .ico-link.tw{background-position: -71px -3px;}
+.ico .ico-link.fb{background-position: -140px -3px;}
+.ico .ico-link.gh{background-position: -209px -3px;}
+.ico .ico-link:hover{background-position-y: -65px;}
+
 
 /*Футер к низу*/
 .wrapper{
