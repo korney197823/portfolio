@@ -66,7 +66,57 @@ body {
 .ico .ico-link.gh{background-position: -209px -3px;}
 .ico .ico-link:hover{background-position-y: -65px;}
 
+/*Навигационное меню*/
+.nav-menu {
+	width: 250px;
+	float: left;
+}
+.menu {
+	overflow: hidden;
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.menu .menu-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu .menu-item{
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+}
 
+.menu .menu-item:first-child{
+	border-top: none;
+}
+/*Текущий пункт навигации*/
+.menu .menu-item.me {
+	background: #3ba8c0;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px;
+
+}
+
+.menu .menu-item.me .menu-link{
+	color: #f9fafb;
+	font-size: 22px;
+} 
+.menu .menu-link  {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+
+.menu .menu-link:hover{
+	color: #3ba8c0;
+}
 /*Футер к низу*/
 .wrapper{
 	position: relative;
