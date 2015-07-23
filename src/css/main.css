@@ -7,6 +7,54 @@ body {
 	font: normal 1em 'fira_sanslight';
 	color: #4a545d;
 }
+/*HEADER*/
+.header {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.container-header{
+	height: 119px;
+	background: #eff3f7 url(images/line.png) bottom center no-repeat ;
+	position: relative;
+	margin-bottom: 39px;
+}
+.container-header .header-logo {
+	position: absolute;
+	top: 39px;
+	left: 0;
+
+}
+.container-header .logo-text {
+	position: absolute;
+	left: -9999px;
+}
+.container-header .ico {
+	position: absolute;
+	right: 0;
+	top: 36px;
+}
+
+
+/*Футер к низу*/
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto;
+}
+.wrapper:after{
+	content: "";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+}
 /*FOOTER*/
 .page-footer {
 	background: #eff3f7 url(images/line.png) top center no-repeat;
@@ -44,3 +92,30 @@ body {
 	text-decoration: underline;
 	background: url(images/lock-open.png) no-repeat;
 }
+
+
+/*OБЩИЕ КЛАССЫ*/
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+/*CLEARFIX*/
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.container:after, .clearfix:after{
+	clear: both;
+}
+/*CLEARFIX END*/
