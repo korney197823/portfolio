@@ -134,7 +134,12 @@ body {
 	height: 80px;
 	margin-top: -80px;
 }
+.information-content{
+	width: 650px;
+	float: right;
+		}
 /*FOOTER*/
+
 .page-footer {
 	background: #eff3f7 url(images/line.png) top center no-repeat;
 	font-family: "fira_sanslight";
@@ -178,7 +183,15 @@ body {
 .container {
 	width: 960px;
 	margin: 0 auto;
+
 }
+.information-content {
+	width: 650px;
+	float: right;
+}
+
+
+
 .text-center{
 	text-align: center;
 }

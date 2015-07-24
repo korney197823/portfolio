@@ -1,0 +1,160 @@
+.about-content {
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+
+.about-content .about-header {
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px #3ba8c0 solid;
+    margin: 0 0 23px 0;
+    padding: 13px 23px;
+    display: inline-block;
+}
+
+.about-cont {
+    padding-bottom: 40px;
+}
+
+
+/*FACE*/
+
+.foto-wrap {
+    float: left;
+    margin-left: 55px;
+    margin-top: 18px;
+}
+
+.avatar {
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    border: 5px solid #3ba8c0;
+}
+
+.avatar-img {
+    width: 150%;
+}
+
+
+/*Список анкетных данных*/
+
+.about-content .basic-info {
+    float: right;
+    width: 400px;
+}
+
+.about-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.worksheet-info {
+    float: left;
+    margin-left: 25px;
+    max-width: 260px;
+}
+
+.info-list {
+    margin-bottom: 8px;
+}
+
+.worksheet-what {
+    font-family: 'fira_sansmedium';
+    font-size: 16px;
+    float: left;
+}
+
+.worksheet-info {
+    font-family: "fira_sansbook";
+    font-size: 15px;
+    overflow: hidden;
+    max-width: 218px;
+}
+
+
+/*SKILLS*/
+
+
+/* Ключевые навыки */
+
+.worksheet-info .skills {
+    width: 224px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .skills-list {
+    display: inline-block;
+    font-family: 'ProximaNovaCondensedSemibold';
+    background: #3ba8c0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3ba8c0), color-stop(49%, #3ba8c0), color-stop(50%, #2e8ca2), color-stop(99%, #2e8ca2));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 99%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2', GradientType=0);
+    /* IE6-9 */
+    border-radius: 4px;
+    padding: 0 7px;
+    margin-right: 6px;
+    color: white;
+    display: inline-block;
+    line-height: 1.2;
+    min-width: 40px;
+    text-align: center;
+}
+
+
+/* Опыт работы и образование*/
+
+.about-countent .about-content-list {
+    list-style: none;
+    padding: 0 0 0 50px;
+    margin: 0;
+}
+
+.about-countent .content-ico {
+    padding: 0 0 0 76px;
+    margin-bottom: 20px;
+}
+
+.about-content .content-ico:last-child {
+    margin-bottom: 0;
+}
+
+.content-ico .where {
+    font-family: 'fira_sansbook';
+    font-size: 16px;
+}
+
+.content-ico .period {
+    font-family: 'fira_sanslight';
+    font-size: 15px;
+    line-height: 1;
+}
+
+.content-ico.icon-work {
+    background: url(../css/images/bag.png) 9px center no-repeat;
+}
+
+.content-ico.icon-college {
+    background: url(../css/images/hat.png) 9px center no-repeat;
+}
+
+.content-ico.icon-course {
+    background: url(../css/images/doc.png) 17px center no-repeat;
+}
