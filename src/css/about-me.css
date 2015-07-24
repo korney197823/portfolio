@@ -121,13 +121,13 @@
 
 /* Опыт работы и образование*/
 
-.about-countent .about-content-list {
+.about-content .about-content-list {
     list-style: none;
     padding: 0 0 0 50px;
     margin: 0;
 }
 
-.about-countent .content-ico {
+.about-content .content-ico {
     padding: 0 0 0 76px;
     margin-bottom: 20px;
 }
