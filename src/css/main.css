@@ -211,3 +211,53 @@ body {
 	clear: both;
 }
 /*CLEARFIX END*/
+
+/*КОНТАКТЫ*/
+.contacts {
+	margin-top: 23px;
+}
+
+.contacts_list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-radius: 4px;
+	background: linear-gradient(to bottom, #3ba8c0 0%, #3ba8c0 24%, #41b9d4 25%, #41b9d4 49%, #48cbe8 50%, #48cbe8 74%, #51daf8 75%, #51daf8 100%);
+	color: #fff;
+
+}
+.contacts_header {
+	height: 26px;
+	font: normal 21px/1 "fira_sansbook";
+	padding-left: 21px;
+	padding-top: 14px;
+}
+.icon {
+	background-repeat: no-repeat;
+	background-position: 0;
+	display: block;
+}
+.icon_mail{
+	background-image: url(images/mail.png);
+}
+
+.icon_phone{
+	background-image: url(images/phone.png);
+}
+
+.icon_skype{
+	background-image: url(images/skype.png);
+}
+.contacts_item{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 35px;
+	margin-left: 36px;
+	
+
+}
+.contacts-link{
+	text-decoration: none;
+	font: normal 15px/20px "fira_sansbook";
+	color: #fff;
+}
