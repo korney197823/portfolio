@@ -1,0 +1,28 @@
+.about-content {
+    background: #48cbe8;
+    border-radius: 4px 4px 0px 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 122px;
+}
+
+.about-content .about-header {
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+    padding: 13px 13px;
+    display: inline-block;
+    
+}
+
+.about-cont {
+    padding-bottom: 40px;
+}
+.form {
+    background: #eff3f7;
+}
+.line{
+    height: 17px;
+    background: #67dffa;
+}
