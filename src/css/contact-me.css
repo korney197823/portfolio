@@ -25,4 +25,33 @@
 .line{
     height: 17px;
     background: #67dffa;
+    margin-bottom: 50px;
 }
+
+.wrapper-form {
+    margin-left: 124px;
+    padding 0;
+}
+.name {
+    float: left;
+    width: 193px;
+    margin-bottom: 18px;
+}
+.email{
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.message-class {
+    width: 400px;
+    height: 183px;
+    vertical-align: inherit;
+}
+/*
+.submit-input{
+    float: left;
+}
+.reset-input{
+    float: right;
+}
+*/

@@ -90,16 +90,54 @@
                     </address>
                 </aside>
                 <!--Изменяемый контент -->
-                 <div class="information-content">
+                <div class="information-content">
                     <!--Основная информация-->
                     <section class="about-content">
                         <h2 class="about-header">У вас интересный проект? Напишите мне</h2>
                     </section>
-                    <div class="line"></div>
-                    <section class="form">
-                        <div class="name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sapiente eaque temporibus. Quo ut perspiciatis quibusdam eligendi, aliquid, odio nisi harum voluptatem placeat nihil ipsa, quia quis qui vel. Deserunt.</div>
-                        
-                    </section>
+                    <div class="line">
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <div class="wrapper-form">
+                                <div class="name">
+                                    <div class="name-label">
+                                        <label for="form-name">Имя</label>
+                                    </div>
+                                    <div class="name-input">
+                                        <input name="form-name" id="form-name" type="text" placeholder="Как к Вам обращаться" class="name-class">
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <div class="email-label">
+                                        <label for="form-email">Email</label>
+                                    </div>
+                                    <div class="email-input">
+                                        <input name="form-email" id="form-email" type="text" placeholder="Куда мне писать" class="email-class">
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="message-label">
+                                        <label for="form-message">Сообщение</label>
+                                    </div>
+                                    <div class="message-input">
+                                        <input name="form-message" id="form-message" type="text" placeholder="Кратко в чем суть" class="message-class">
+                                    </div>
+                                </div>
+                                <div class="capcha">Здесь должна быть капча</div>
+                                <div class="submit">
+                                    <div class="submit-input">
+                                        <button name="submit" id="submit" type="submit">Отправить</button>
+                                    </div>
+                                    <div class="reset">
+                                        <div class="reset-input">
+                                            <button name="reset" id="reset" type="reset">Очистить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <!--/Изменяемый контент-->
             </div>
@@ -113,7 +151,7 @@
             <div class="copy">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
         </div>
     </footer>
-    <script src="bower/jquery/jquery.js">
+    <script src="bower/jquery/dist/jquery.min.js">
     </script>
     <script src="js/main.js"></script>
 </body>

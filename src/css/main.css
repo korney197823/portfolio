@@ -6,10 +6,12 @@ body {
 	background: url(images/bg.png) repeat;
 	font: normal 1em 'fira_sanslight';
 	color: #4a545d;
+	margin: 0;
+	padding: 0;
 }
 /*HEADER*/
 .header {
-	max-width: 1200px;
+	max-width: 100%;
 	min-width: 960px;
 	height: 100%;
 	margin: 0 auto;

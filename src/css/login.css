@@ -1,0 +1,72 @@
+.authorization {
+	width: 590px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-radius: 4px;
+
+
+
+}
+.auto-header{
+	
+}
+.form-header {
+	text-align: center;
+	height: 106px;
+	margin: 0;
+	padding: 0;	
+	background: linear-gradient(#48cbe8 92px, #67dffa 14px);
+	color: #fff;
+
+}
+
+
+}
+
+
+.login-label{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.input-login{
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.login{
+	width: 420px;
+	height: 62px;
+	border-radius: 3px;
+}
+.password{
+	width: 420px;
+	height: 62px;
+	border-radius: 3px;
+}
+.password-label{
+	text-align: center;
+	font-size: 28px;
+}
+.login-label{
+	text-align: center;
+	font-size: 28px;
+}
+.input-password{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.form-button{
+	text-align: center;
+}
+.auto-body{
+	background: #eff3f7;
+}
+.button{
+	height: 50px;
+	width: 225px;
+	background: #48cbe8;
+	color: #fff;
+	font-size: 28px;
+	border-radius: 6px;
+}
