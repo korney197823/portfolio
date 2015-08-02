@@ -13,7 +13,7 @@
     <!--favicon.ico-->
     <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="bower/normalize.css">
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
     <!--fonts CSS-->
     <link rel="stylesheet" href="fonts/fira.css">
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
@@ -95,8 +95,6 @@
                     <section class="about-content">
                         <h2 class="about-header">У вас интересный проект? Напишите мне</h2>
                     </section>
-                    <div class="line">
-                    </div>
                     <div class="form">
                         <form action="">
                             <div class="wrapper-form">
@@ -124,24 +122,26 @@
                                         <input name="form-message" id="form-message" type="text" placeholder="Кратко в чем суть" class="message-class">
                                     </div>
                                 </div>
-                                <div class="capcha">Здесь должна быть капча</div>
-                                <div class="submit">
-                                    <div class="submit-input">
-                                        <button name="submit" id="submit" type="submit">Отправить</button>
-                                    </div>
-                                    <div class="reset">
-                                        <div class="reset-input">
-                                            <button name="reset" id="reset" type="reset">Очистить</button>
-                                        </div>
+                                <div class="capcha">
+                                    <label for="form-capcha">Введите код, указанный на картинке</label>
+                                    <figure class="capcha-box"><img src="css/images/Captcha.png" alt="" class="capcha-img">
+                                    </figure>
+                                    <div class="input-capcha">
+                                        <input name="form-capcha" id="form-caphca" type="text" class="capcha-input" placeholder="Введите код">
                                     </div>
                                 </div>
+                                <div class="submit">
+                                    <button name="submit" id="submit" type="submit" class="submit-button">Отправить</button>
+                                    <button name="reset" id="reset" type="reset" class="reset-button">Очистить</button>
+                                </div>
                             </div>
-                        </form>
                     </div>
+                    </form>
                 </div>
-                <!--/Изменяемый контент-->
             </div>
+            <!--/Изменяемый контент-->
         </div>
+    </div>
     </div>
     <footer class="page-footer">
         <div class="footer-container">
