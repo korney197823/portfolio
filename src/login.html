@@ -13,7 +13,8 @@
     <!--favicon.ico-->
     <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="bower/normalize.css">
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!--fonts CSS-->
     <link rel="stylesheet" href="fonts/fira.css">
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
@@ -29,31 +30,27 @@
     <![endif]-->
     <div class="wrapper">
         <div class="main-content">
+            <!--Главный контейнер-->
             <div class="container">
-                <div class="authorization">
-                    <div class="auto-header">
-                        <div class="header-header">
-                        </div>
-                            <h2 class="form-header">Авторизируйтесь</h2>
-                        
+                <div class="authorization_wrapper login_wrapper">
+                    <div class="auto_header">
+                        <h2 class="form_header">Авторизируйтесь</h2>
                     </div>
-                    <div class="auto-body">
-                        <form action="" class="autho-form">
-                            <div class="login-label">
-                                <label for="login">Логин</label>
+                    <div class="auto_body">
+                        <form id="login" class="form" role="form">
+                            <!-- Вывод сообщений с сервера -->
+                            <div class="server_mes error_mes"></div>
+                            <div class="server_mes success_mess"></div>
+                            <!-- Login -->
+                            <div class="form_group">
+                                <label for="login" class="label">Логин</label>
+                                <input name="login" type="text" class="input" id="name" placeholder="Введите логин" qtip-position="right" qtip-content="Вы не ввели Логин">
                             </div>
-                            <div class="input-login">
-                                <input name="login" type="text" class="login" placeholder="Введите логин">
+                            <div class="form_group">
+                                <label for="password" class="label">Пароль</label>
+                                <input name="password" type="password" class="input" id="password" placeholder="Введите пароль" qtip-position="right" qtip-content="Вы не ввели пароль">
                             </div>
-                            <div class="password-label">
-                                <label for="password">Пароль</label>
-                            </div>
-                            <div class="input-password">
-                                <input name="password" type="password" class="password" placeholder="Введите пароль">
-                            </div>
-                            <div class="form-button">
-                                <button class="button">Войти</button>
-                            </div>
+                            <button type="submit" class="button">Войти</button>
                         </form>
                     </div>
                 </div>
@@ -61,14 +58,20 @@
             </div>
         </div>
     </div>
+    </div>
     <footer class="page-footer">
         <div class="footer-container">
             <div class="copy">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
         </div>
     </footer>
-    <script src="bower/jquery/jquery.js">
+    <script src="bower/jquery/dist/jquery.js">
     </script>
+    <script src='bower/qtip2/jquery.qtip.js'></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/add_project.js"></script>
 </body>
 
 </html>

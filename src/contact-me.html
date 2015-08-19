@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!--fonts CSS-->
     <link rel="stylesheet" href="fonts/fira.css">
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
@@ -96,14 +97,14 @@
                         <h2 class="about-header">У вас интересный проект? Напишите мне</h2>
                     </section>
                     <div class="form">
-                        <form action="">
+                        <form id="contact-me">
                             <div class="wrapper-form">
                                 <div class="name">
                                     <div class="name-label">
                                         <label for="form-name">Имя</label>
                                     </div>
                                     <div class="name-input">
-                                        <input name="form-name" id="form-name" type="text" placeholder="Как к Вам обращаться" class="name-class">
+                                        <input name="form-name" id="form-name" type="text" placeholder="Как к Вам обращаться" qtip-position="left" qtip-content="Вы не ввели имя" class="name-class">
                                     </div>
                                 </div>
                                 <div class="email">
@@ -111,7 +112,7 @@
                                         <label for="form-email">Email</label>
                                     </div>
                                     <div class="email-input">
-                                        <input name="form-email" id="form-email" type="text" placeholder="Куда мне писать" class="email-class">
+                                        <input name="form-email" id="form-email" type="text" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="email-class">
                                     </div>
                                 </div>
                                 <div class="message">
@@ -119,7 +120,7 @@
                                         <label for="form-message">Сообщение</label>
                                     </div>
                                     <div class="message-input">
-                                        <input name="form-message" id="form-message" type="text" placeholder="Кратко в чем суть" class="message-class">
+                                        <input name="form-message" id="form-message" type="text" placeholder="Кратко в чем суть" qtip-content="Что вы хотите?" class="message-class">
                                     </div>
                                 </div>
                                 <div class="capcha">
@@ -127,7 +128,7 @@
                                     <figure class="capcha-box"><img src="css/images/Captcha.png" alt="" class="capcha-img">
                                     </figure>
                                     <div class="input-capcha">
-                                        <input name="form-capcha" id="form-caphca" type="text" class="capcha-input" placeholder="Введите код">
+                                        <input name="form-capcha" id="form-caphca" type="text" class="capcha-input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
                                     </div>
                                 </div>
                                 <div class="submit">
@@ -151,8 +152,11 @@
             <div class="copy">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
         </div>
     </footer>
-    <script src="bower/jquery/dist/jquery.min.js">
+    <script src="bower/jquery/dist/jquery.js">
     </script>
+    <script src='bower/qtip2/jquery.qtip.js'></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/validation.js"></script>
     <script src="js/main.js"></script>
 </body>
 

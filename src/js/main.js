@@ -1,4 +1,4 @@
-var	myModule = (function () {
+/*var	myModule = (function () {
 
 	var init = function() {
 		_setUpListners();
@@ -20,3 +20,4 @@ var	myModule = (function () {
 })();
 
 myModule.init();
+*/

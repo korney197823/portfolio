@@ -115,6 +115,7 @@
     border-radius: 3px;
     color: #fff;
     background: #849db5;
+    border: 1px solid #849db5;
 }
 
 .reset-button{
@@ -124,6 +125,7 @@
     border-radius: 3px;
     color: #fff;
     background: #849db5;
+    border: 1px solid #849db5;
 }
 .reset-button:hover{
     background: #48cbe8;
@@ -136,3 +138,19 @@
 ::-moz-placeholder          {color:#48cbe8;}
 :-moz-placeholder           {color:#48cbe8;}
 :-ms-input-placeholder      {color:#48cbe8;}
+
+.has-error {
+    background: #fad2d1;
+    border-color: #f97e76;
+    color: №fff;
+}
+
+/* -- Тултипы -- */
+
+.qtip-mystyle{
+    background-color: #f97e76;
+    border-color: #f97e76;
+    font-family: 'Arial';
+    color: #ffffff;
+    font-size: 13px;
+}

@@ -1,3 +1,4 @@
+/*
 .photowall{
 	width: 100%;
 	overflow: hidden;
@@ -16,3 +17,241 @@
 .work-image img {
 	max-width: 100%;
 }
+*/
+
+.wrap-gallery {
+    overflow: hidden;
+}
+
+.img-figure {
+    float: left;
+    width: 183px;
+    height: 129px;
+    border: 2px solid #3ba8c0;
+    border-radius: 4px;
+    margin: 12px;
+    margin-bottom: 90px;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.img1:hover {
+    filter: alpha (Opacity=25);
+    opacity: 0.25;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.img2:hover {
+    opacity: 0.25;
+}
+
+.img3 {
+    width: 100%;
+}
+
+.img3:hover {
+    opacity: 0.25;
+}
+
+.img4 {
+    width: 98%;
+}
+
+.img4:hover {
+    opacity: 0.25;
+}
+
+.img5 {
+    width: 100%;
+}
+
+#addproject_img {
+    border: 1px dashed #3ba8c0;
+}
+
+.img-text {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.img-link {
+    text-decoration: none;
+}
+
+#new_project_popup {
+    display: none;
+}
+
+.modal_wrapper {
+    width: 362px;
+    border-radius: 5px;
+    background: #eff3f7;
+}
+
+.modal_header {
+    margin: 0;
+    margin-bottom: 15px;
+    background: linear-gradient(#48cbe8 45px, #67dffa 9px);
+}
+
+.b-close {
+    margin-top: 27px;
+    margin-right: 13px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    text-decoration: none;
+    border: 0;
+    background: #48cbe8;
+    background-image: url(images/close.png);
+}
+
+.modal_title {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin: 0;
+    padding-left: 15px;
+    background: linear-gradient(#48cbe8 83%, #67dffa 17%);
+    color: #fff;
+    font-size: 24px;
+}
+
+.error_mes {
+    background-color: #fad2d1;
+    border-color: #f97e76;
+    color: #f97e76;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 12px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+.succes_mes {
+    background-color: #b8e1ce;
+    border-color: #49bb7b;
+    color: #49bb7b;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 12px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+.label {
+    display: block;
+    font-size: 19px;
+}
+
+.fileupload {
+    float: right;
+}
+
+.form_group {
+    margin-left: 20px;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.input {
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    color: #48cbe8;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 40px;
+}
+
+.textarea {
+    border: 1px solid #48cbe8;
+    border-radius: 3px;
+    color: #48cbe8;
+    width: 320px;
+    height: 110px;
+}
+
+#filename {
+    width: 267px;
+}
+
+.fileupload {
+    text-decoration: none;
+    width: 40px;
+    float: right;
+    margin-right: 21px;
+    border: none;
+}
+
+.btn-wrapp {
+    padding-bottom: 15px;
+}
+
+.btn {
+    margin-left: 130px;
+    border-radius: 3px;
+    color: #fff;
+    background: #849db5;
+}
+
+.has-error {
+    background: #fad2d1;
+    border-color: #f97e76;
+    color: №fff;
+}
+
+.qtip-mystyle {
+    background-color: #f97e76;
+    border-color: #f97e76;
+    font-family: 'Arial';
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+/* _____________ // file upload _________ */
+
+.fileupload_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.fileupload_lable {
+    display: block;
+    width: 52px;
+    height: 44px;
+    position: absolute;
+    right: 21px;
+    background: url(images/upload-icon.png) 10px 7px no-repeat;
+    background-color: #48cbe8;
+    border-radius: 0 4px 4px 0;
+}
+
+.fileupload {
+    /* хак, взятый из html5boilerplate */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+
+
+/* _____________ // file upload end _________ */
