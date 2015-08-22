@@ -68,7 +68,7 @@
 .button:active{
 	border-top: solid 2px #3ba8c0;
 }
-.botton:hover{
+.button:hover{
 	border-bottom: none;
 }
 .authorization_wrapper .label{
@@ -110,4 +110,9 @@
     font-family: 'Arial';
     color: #ffffff;
     font-size: 13px;
+}
+.has-error {
+    background: #fad2d1;
+    border-color: #f97e76;
+    color: №fff;
 }

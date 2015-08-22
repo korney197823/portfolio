@@ -94,55 +94,43 @@
                 <div class="information-content">
                     <!--Основная информация-->
                     <section class="about-content">
-                        <h2 class="about-header">У вас интересный проект? Напишите мне</h2>
-                    </section>
-                    <div class="form">
-                        <form id="contact-me">
-                            <div class="wrapper-form">
-                                <div class="name">
-                                    <div class="name-label">
-                                        <label for="form-name">Имя</label>
+                        <div class="header_big_wrap">
+                            <h2 class="about-header">У вас интересный проект? Напишите мне!</h2>
+                        </div>
+                        <div class="about-cont">
+                            <div class="contact-form-wrap">
+                                <form action="" class="form contact_form" id="contact-me">
+                                    <div class="form_line clearfix">
+                                        <div class="form_group pull_left">
+                                            <label for="name" class="label">Имя</label>
+                                            <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                                        </div>
+                                        <div class="form_group pull_right">
+                                            <label for="email" class="label">Email</label>
+                                            <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-content="Вы не ввели email" qtip-position="right">
+                                        </div>
                                     </div>
-                                    <div class="name-input">
-                                        <input name="form-name" id="form-name" type="text" placeholder="Как к Вам обращаться" qtip-position="left" qtip-content="Вы не ввели имя" class="name-class">
+                                    <div class="form_group_text">
+                                        <label for="message" class="label">Сообщение</label>
+                                        <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
                                     </div>
-                                </div>
-                                <div class="email">
-                                    <div class="email-label">
-                                        <label for="form-email">Email</label>
+                                    <div class="form_group captcha_wrap clearfix">
+                                        <label for="captcha" class="label">Введите код, указанный на картинке</label>
+                                        <img src="css/images/bg_captcha.jpg" height="79" width="186" alt="код" class="captcha pull_left">
+                                        <input type="text" name="captcha" class="input input_captcha pull_right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
                                     </div>
-                                    <div class="email-input">
-                                        <input name="form-email" id="form-email" type="text" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="email-class">
+                                    <div class="button_group">
+                                        <button class="button" type="submit">Отправить</button>
+                                        <button class="button button_reset" type="reset">Очистить</button>
                                     </div>
-                                </div>
-                                <div class="message">
-                                    <div class="message-label">
-                                        <label for="form-message">Сообщение</label>
-                                    </div>
-                                    <div class="message-input">
-                                        <input name="form-message" id="form-message" type="text" placeholder="Кратко в чем суть" qtip-content="Что вы хотите?" class="message-class">
-                                    </div>
-                                </div>
-                                <div class="capcha">
-                                    <label for="form-capcha">Введите код, указанный на картинке</label>
-                                    <figure class="capcha-box"><img src="css/images/Captcha.png" alt="" class="capcha-img">
-                                    </figure>
-                                    <div class="input-capcha">
-                                        <input name="form-capcha" id="form-caphca" type="text" class="capcha-input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
-                                    </div>
-                                </div>
-                                <div class="submit">
-                                    <button name="submit" id="submit" type="submit" class="submit-button">Отправить</button>
-                                    <button name="reset" id="reset" type="reset" class="reset-button">Очистить</button>
-                                </div>
+                                </form>
                             </div>
-                    </div>
-                    </form>
+                        </div>
+                    </section>
+                    <!--/Изменяемый контент-->
                 </div>
             </div>
-            <!--/Изменяемый контент-->
         </div>
-    </div>
     </div>
     <footer class="page-footer">
         <div class="footer-container">
