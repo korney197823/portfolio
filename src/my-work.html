@@ -21,7 +21,6 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about-me.css">
-
     <link rel="stylesheet" href="css/my-work.css">
     <script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -95,31 +94,29 @@
                 <div class="information-content">
                     <!--Основная информация-->
                     <section class="about-content">
-                            <div class="about-header">НЕ Мои работы</div>
-                            <div class="about-cont clearfix">
-                              <div class="projects_wrapper">
+                        <div class="about-header">НЕ Мои работы</div>
+                        <div class="about-cont clearfix">
+                            <div class="projects_wrapper">
                                 <ul class="projects_list">
-                                  <li class="projects_item">
-                                <div class="hover_img">
-                                  <img class="project_img" src="css\images\Css-Tricks.png" alt="css-tricks.com">
-                                  <div class="zoom_wrapper">
-                                    <a href="https://css-tricks.com/" class="zoom_link" target="_blank">css-tricks.com</a>
-                                  </div>
-                                </div>
-                                <a href="https://css-tricks.com/" class="project_link" target="_blank">css-tricks.com</a>
-                                <div class="project_desc">Сайт первой помощи CSS</div>
-                              </li><!-- / Проект 1 -->
-
-                              <li class="projects_item add_new_item">
-                                <a href="#" class="add_new_link" id="add_new_item">
-                                  <div class="add_new_text">Добавить проект</div>
-                                </a>
-                              </li>
+                                    <li class="projects_item">
+                                        <div class="hover_img">
+                                            <img class="project_img" src="css\images\Css-Tricks.png" alt="css-tricks.com">
+                                            <div class="zoom_wrapper">
+                                                <a href="https://css-tricks.com/" class="zoom_link" target="_blank">css-tricks.com</a>
+                                            </div>
+                                        </div>
+                                        <a href="https://css-tricks.com/" class="project_link" target="_blank">css-tricks.com</a>
+                                        <div class="project_desc">Сайт первой помощи CSS</div>
+                                    </li>
+                                    <!-- / Проект 1 -->
+                                    <li class="projects_item add_new_item">
+                                        <a href="#" class="add_new_link" id="add_new_item">
+                                            <div class="add_new_text">Добавить проект</div>
+                                        </a>
+                                    </li>
                                 </ul>
-                              </div>
-
                             </div>
-
+                        </div>
                     </section>
                     <div id="new_project_popup">
                         <div class="modal_wrapper">
@@ -129,19 +126,19 @@
                             </div>
                             <div class="modal_body">
                                 <form action="" id="addnewproject" role="form" class="form">
-                                   <!-- <div class="server_mes error_mes" style="display: block;"></div>
+                                    <!-- <div class="server_mes error_mes" style="display: block;"></div>
                                     <div class="server_mes succes_mes"></div> -->
                                     <div class="form_group">
-                                        <label for="projectName" class="label" >Название проекта</label>
+                                        <label for="projectName" class="label">Название проекта</label>
                                         <input type="text" id="projectName" name="projectName" placeholder="Введите название" qtip-content='Вы не ввели название проекта' class="input">
                                     </div>
                                     <div class="form_group">
                                         <div id="uploadfile" class="fileupload_wrapper"><span class="label">Картинка проекта</span>
-                                            <label for="" class="fileupload_lable">
-                                                <input type="file" id="fileupload" class="fileupload" name="files[]">
-                                                <input type="hidden" id="fileurl" class="fileurl">
+                                            <label class="fileupload_lable">
+                                                <input id="fileupload" class="fileupload" type="file" name="files[]">
+                                                <input id="fileurl" type="hidden" name="fileurl">
                                             </label>
-                                            <input id="filename" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input">
+                                            <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
                                         </div>
                                     </div>
                                     <div class="form_group">
@@ -155,7 +152,6 @@
                                     <div class="btn_wrapp">
                                         <button type="submit" class="btn">Добавить</button>
                                     </div>
-
                                 </form>
                             </div>
                         </div>

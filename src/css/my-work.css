@@ -190,6 +190,7 @@
 }
 .form_group{
  margin-bottom: 12px;
+ 
 }
 .label{
 	font-size: 18px;
@@ -226,15 +227,22 @@
 
 
 /* _____________ // file upload _________ */
+.fileupload {
+    text-decoration: none;
+    width: 40px;
+    float: right;
+    margin-right: 21px;
+    border: none;
+}
 
-.fileupload-wrapper {
+.fileupload_wrapper {
   width: 100%;
   position: relative;
 }
-.fileupload-lable{
+.fileupload_lable{
 	display: block;
   width: 52px;
-  height: 41px;
+  height: 45px;
 	position: absolute;
   right: 0;
 	background: url(images/upload-icon.png) 10px 7px no-repeat;
