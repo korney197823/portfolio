@@ -21,6 +21,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about-me.css">
+
     <link rel="stylesheet" href="css/my-work.css">
     <script src="bower/modernizr/modernizr.js"></script>
 </head>
@@ -94,35 +95,31 @@
                 <div class="information-content">
                     <!--Основная информация-->
                     <section class="about-content">
-                                          <h2 class="about-header">НЕ Мои работы</h2>
-                            <div class="wrap-gallery">
-                                <a href="#" class="img-link">
-                                    <figure class="img-figure"><img src="css/images/road.jpg" alt="road" class="img1">
-                                        <figcaption class="img-text">изображение дороги Фото Буев. И. О.</figcaption>
-                                    </figure>
+                            <div class="about-header">НЕ Мои работы</div>
+                            <div class="about-cont clearfix">
+                              <div class="projects_wrapper">
+                                <ul class="projects_list">
+                                  <li class="projects_item">
+                                <div class="hover_img">
+                                  <img class="project_img" src="css\images\Css-Tricks.png" alt="css-tricks.com">
+                                  <div class="zoom_wrapper">
+                                    <a href="https://css-tricks.com/" class="zoom_link" target="_blank">css-tricks.com</a>
+                                  </div>
+                                </div>
+                                <a href="https://css-tricks.com/" class="project_link" target="_blank">css-tricks.com</a>
+                                <div class="project_desc">Сайт первой помощи CSS</div>
+                              </li><!-- / Проект 1 -->
+
+                              <li class="projects_item add_new_item">
+                                <a href="#" class="add_new_link" id="add_new_item">
+                                  <div class="add_new_text">Добавить проект</div>
                                 </a>
-                                <a href="#" class="img-link">
-                                    <figure class="img-figure"><img src="css/images/йог.jpg" alt="yog" class="img2">
-                                        <figcaption class="img-text">йог Фото Буев. И. О.</figcaption>
-                                    </figure>
-                                </a>
-                                <a href="#" class="img-link">
-                                    <figure class="img-figure"><img src="css/images/храм.jpg" alt="church" class="img3">
-                                        <figcaption class="img-text">Храм Христа спасителя Фото Буев. И. О.</figcaption>
-                                    </figure>
-                                </a>
-                                <a href="#" class="img-link">
-                                    <figure class="img-figure"><img src="css/images/окна.jpg" alt="windows" class="img4">
-                                        <figcaption class="img-text">Храм Христа спасителя Фото Буев. И. О.</figcaption>
-                                    </figure>
-                                </a>
-                                <a id="add-new-item"href="#" class="img-link">
-                                    <figure class="img-figure" id="addproject_img"><img src="css/images/add-new.png" alt="windows" class="img5">
-                                        <figcaption class="img-text"></figcaption>
-                                    </figure>
-                                </a>
+                              </li>
+                                </ul>
+                              </div>
+
                             </div>
-      
+
                     </section>
                     <div id="new_project_popup">
                         <div class="modal_wrapper">
@@ -146,7 +143,7 @@
                                             </label>
                                             <input id="filename" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input">
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="form_group">
                                         <label for="projectUrl" class="label">Url проекта</label>
                                         <input type="text" id="projectUrl" class="input" name="projectUrl" placeholder="Добавте ссылку" qtip-content='Вы не добавили ссылку'>
@@ -155,10 +152,10 @@
                                         <label for="projectDesc" class="label">Описание</label>
                                         <textarea name="text" id="projectDesc" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание вашего проекта обязательно" class="textarea"></textarea>
                                     </div>
-                                    <div class="btn-wrapp">
+                                    <div class="btn_wrapp">
                                         <button type="submit" class="btn">Добавить</button>
                                     </div>
-                                    
+
                                 </form>
                             </div>
                         </div>

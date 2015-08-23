@@ -4,7 +4,7 @@ var myModule = (function (){
 		_setUpListners();
 		};
 	var _setUpListners = function () {
-		$('#add-new-item').on('click', _showModal ); // открыть модальное окно
+		$('#add_new_item').on('click', _showModal ); // открыть модальное окно
 		$('#addnewproject').on('submit', _addProject); // добавление проекта
 
 
@@ -17,7 +17,7 @@ var myModule = (function (){
 
 			var divPopup = $('#new_project_popup'),
 				form = divPopup.find('.form');
-			
+
 
 			divPopup.bPopup({
 				speed: 650,
@@ -37,7 +37,7 @@ var myModule = (function (){
 			var form = $(this),
 				url = 'add_project.php',
 				defObj = _ajaxForm(form, url);
-				
+
 			if (defObj) {
 					defObj.done(function(ans) {
 					console.log(ans);
@@ -54,9 +54,9 @@ var myModule = (function (){
 					}
 
 				});
-			
+
 			}
-				
+
 		};
 
 	var _ajaxForm = function (form, url) {
