@@ -125,11 +125,7 @@
     border: none;
 }
 
-.has-error {
-    background: #fad2d1;
-    border-color: #f97e76;
-    color: №fff;
-}
+
 
 .qtip-mystyle {
     background-color: #f97e76;
@@ -221,6 +217,11 @@
  color: #48cbe8;
  border: 1px solid rgb(72, 203, 232);
  border-radius: 4px;
+}
+.has-error {
+    background: #fad2d1;
+    border-color: #f97e76;
+    color: №fff;
 }
 
 
