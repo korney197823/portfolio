@@ -1,0 +1,20 @@
+.modal_body
+  form.form#addnewproject(role="form")
+    .form_group
+      label.label(for="projectName") Название проекта
+      input.input#projectName(type="text", name="projectName", placeholder="Введите название", qtip-content='Вы не ввели название проекта')    
+    .form_group
+      .fileupload_wrapper#uploadfile
+        span.label Картинка проекта
+        label.fileupload_lable
+          input.fileupload#fileupload(type="file", name="files[]")
+          input#fileurl(type="hidden", name="fileurl)
+        input.input#filename(type="text", name="filename", placeholder="Загрузите изображение", disabled qtip-content="Вы не выбрали изображение")
+    .form_group">
+      label.label(for="projectUrl") Url проекта
+      input.input#projectUrl(type="text", name="projectUrl", placeholder="Добавте ссылку", qtip-content='Вы не добавили ссылку')
+    .form_group"
+      label.label(for="projectDesc") Описание
+      textarea.textarea#projectDesc(name="text", rows="3", placeholder="Пара слов о вашем проекте", qtip-content="Описание вашего проекта обязательно")
+    .btn_wrapp
+      button.btn(type="submit") Добавить
