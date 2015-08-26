@@ -1,0 +1,62 @@
+block link
+  -var selected = 'Обо мне'
+  
+extends ../layouts/main_layout.jade
+
+block title
+  title Главная страница
+
+block content
+  // -Обо мне
+  section.about-content
+    h2.about-header Основная информация
+      .about-cont.clearfix
+        .foto-wrap
+          .avatar
+            img.avatar-img(src="css/images/ava2.png", alt="Корней")
+        .basic-info
+          ul.about-info
+            li.info-list.clearfix
+              .worksheet-what Меня зовут
+              .worksheet-info Корниенко Денис Витальевич
+            li.info-list.clearfix
+              .worksheet-what Мой возраст:
+              .worksheet-info 36 лет
+            li.info-list.clearfix
+              .worksheet-what Мой город:
+              .worksheet-info Геленджик, Россия
+            li.info-list.clearfix
+              .worksheet-what Моя специализация:
+              .worksheet-info FRONTEND разработчик
+            .li.info-list.clearfix">
+              .worksheet-what Ключевые навыки
+              .worksheet-info.skills
+                ul.skills
+                  li.skills-list html
+                  li.skills-list css
+                  li.skills-list javascript
+                  li.skills-list gulp
+                  li.skills-list git
+  // - Опыт работы
+  section.about-content
+    h2.about-header Опыт работы
+    .about-cont
+      ul.about-content-list
+        li.content-ic.icon-work
+          .where ООО "Фирма "Славтранс" - Главный бухгалтер
+          .period Декабрь 2009 - По настоящее время
+        li.content-ico.icon-work
+          .where ЗАО "ФСК "Лидер-Юг" - Заместитель главного бухгалтера
+          .period Март 2007 - Ноябрь 2009
+
+  //-Образование
+  section.about-content
+    h2.about-header Образование
+      .about-cont
+        ul.about-content-list
+          li.content-ico.icon-college
+            where Высшее. ТГАСУ
+            period Сентябрь 2000 - июнь 2005
+          li.content-ico.icon-course
+            .where Loftschool.ru
+            .period Июль 2015 - по настоящее время
