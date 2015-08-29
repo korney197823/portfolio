@@ -1,12 +1,38 @@
-address.contacts
-  ul.contacts_list
-    .contacts_header Контакты
-    li.contacts_item.icon.icon_mail
-      a.contacts-link(href="mailto:korney197823@gmail.com")
-        span.contact-me-text korney197823@gmail.com
-    li.contacts_item icon.icon_phone
-      a.contacts-link(href="tel:+79883337098")
-        span.contact-me-text +79883337098
-    li.contacts_item icon.icon_skype
-      a.contacts-link(href="skype:korney197823")
-        span.contact-me-text korney197823
+block link
+  -var selected = 'Связаться со мной';
+
+extends ../layouts/main_layout.jade
+
+block title
+  title Связаться со мной
+
+block content
+  section.about-content
+    .header_big_wrap
+      h2.about-header У вас интересный проект? Напишите мне!
+    .about-cont
+      .contact-form-wrap
+        .form.form.contact_form#contact-me 
+          .form_line.clearfix
+            .form_group.pull_left
+              label.label(for="name") Имя
+              input.input(type="text", name="name", id="name", placeholder="Как к вам обращаться", qtip-content="Вы не ввели имя")
+            .form_group.pull_right">
+              label.label(for="email") Email
+              input.input(type="email", name="email", id="email", placeholder="Куда мне писать", qtip-content="Вы не ввели email", qtip-position="right")
+          .form_group_text
+            label.label(for="message") Сообщение
+              textarea.textarea(name="message", id="message", rows="3", placeholder="Кратко в чем суть", qtip-content="Что вы от меня хотите?")
+          .form_group.captcha_wrap.clearfix
+            label.label for="captcha" class="">Введите код, указанный на картинке</label>
+                                        <img src="css/images/bg_captcha.jpg" height="79" width="186" alt="код" class="captcha pull_left">
+                                        <input type="text" name="captcha" class="input input_captcha pull_right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                                    </div>
+                                    <div class="button_group">
+                                        <button class="button" type="submit">Отправить</button>
+                                        <button class="button button_reset" type="reset">Очистить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>

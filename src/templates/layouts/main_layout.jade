@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru-RU")
+  include ../common/head.jade
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используйте <strong>устаревший</strong> браузер. Пожайлуста <a href="http://browsehappy.com/">обновите</a> его.</p>
+    <![endif]-->
+
+    .wrapper
+      .main-content
+
+        //-Шапка
+        include ../common/header.jade
+        .container
+          //-Левые блоки
+          aside.nav-menu
+            //-Блок навигации
+            include ../common/navigate.jade
+            //-Блок с контактами
+            include ../common/contact.jade
+        //-Изменяемый контент
+        .information-content
+          //-Изменяемая часть каждой страницы
+          block content
+
+    include ..common/footer.jade
+
