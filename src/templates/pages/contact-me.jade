@@ -25,7 +25,7 @@ block content
               textarea.textarea(name="message", id="message", rows="3", placeholder="Кратко в чем суть", qtip-content="Что вы от меня хотите?")
           .form_group.captcha_wrap.clearfix
             label.label(for="captcha") Введите код, указанный на картинке
-              img.captcha pull_left(src="css/images/bg_captcha.jpg", height="79", width="186", alt="код")
+              img.captcha.pull_left(src="css/images/bg_captcha.jpg", height="79", width="186", alt="код")
               input.input.input_captcha pull_right(type="text", name="captcha", id="captcha", placeholder="Введите код", qtip-position="right", qtip-content="Вы не ввели код")
           .button_group
             button.button(type="submit") Отправить
