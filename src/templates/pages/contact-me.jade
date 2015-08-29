@@ -24,15 +24,10 @@ block content
             label.label(for="message") Сообщение
               textarea.textarea(name="message", id="message", rows="3", placeholder="Кратко в чем суть", qtip-content="Что вы от меня хотите?")
           .form_group.captcha_wrap.clearfix
-            label.label for="captcha" class="">Введите код, указанный на картинке</label>
-                                        <img src="css/images/bg_captcha.jpg" height="79" width="186" alt="код" class="captcha pull_left">
-                                        <input type="text" name="captcha" class="input input_captcha pull_right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
-                                    </div>
-                                    <div class="button_group">
-                                        <button class="button" type="submit">Отправить</button>
-                                        <button class="button button_reset" type="reset">Очистить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
+            label.label(for="captcha") Введите код, указанный на картинке
+              img.captcha pull_left(src="css/images/bg_captcha.jpg", height="79", width="186", alt="код")
+              input.input.input_captcha pull_right(type="text", name="captcha", id="captcha", placeholder="Введите код", qtip-position="right", qtip-content="Вы не ввели код")
+          .button_group
+            button.button(type="submit") Отправить
+            button.button.button_reset(type="reset") Очистить
+                                    

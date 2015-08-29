@@ -1,0 +1,21 @@
+extends ../layouts/login_layout.jade
+
+block title
+  title Авторизация
+  
+block content
+  .container
+    .authorization_wrapper.login_wrapper
+      .auto_header
+        h2.form_header Авторизируйтесь
+      .auto_body
+        form.form#login(role="form")
+          .server_mes.error_mes
+          .server_mes.success_mess      
+          .form_group
+            label.label(for="login") Логин
+            input.input(name="login", type="text", id="name", placeholder="Введите логин", qtip-position="right", qtip-content="Вы не ввели Логин")
+          .form_group
+            label.label(for="password") Пароль
+            input.input(name="password", type="password", id="password", placeholder="Введите пароль", qtip-position="right", qtip-content="Вы не ввели пароль")
+          button.button(type="submit") Войти

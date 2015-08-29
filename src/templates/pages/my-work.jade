@@ -1,0 +1,27 @@
+block link
+  -var selected = 'Мои работы';
+  
+extends ../layouts/main_layout.jade
+
+block title
+  title Мои работы
+
+block content
+  section.about-content
+    .about-header НЕ Мои работы
+    .about-cont.clearfix
+      .projects_wrapper
+        ul.projects_list
+          li.projects_item
+            .hover_img
+              img.project_img(src="css\images\Css-Tricks.png", alt="css-tricks.com")
+              .zoom_wrapper
+                a.zoom_link(href="https://css-tricks.com/", target="_blank") css-tricks.com
+            a.project_link(href="https://css-tricks.com/", target="_blank") css-tricks.com
+            .project_desc Сайт первой помощи CSS
+            
+            // -Добавить проект
+            
+          li.projects_item.add_new_item
+            a.add_new_link(href="#", id="add_new_item")
+              .add_new_text Добавить проект
